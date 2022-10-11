@@ -27,13 +27,16 @@ function AllCollapseExample() {
             <Accordion.Item eventKey="2">
                 <Accordion.Header>Describe the use of useRef hook in react?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    useRef(initialValue) is a built-in React hook that accepts one argument as the initial value and returns a reference (aka ref). A reference is an object having a special property current. <br />
+                    The useRef hook is the new addition in React 16.8. Before proceeding to this article there is a prerequisite to know about the ref in react.
+                    The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. <br />
+                    useRef is one of the standard hooks provided by React. It will return an object that you can use during the whole lifecycle of the component.
+
+                    The main use case for the useRef hook is to access a DOM child directly. I’ll show exactly how to do that in another section.
+
+                    Although accessing the DOM is the main use case, it doesn’t mean it’s the only one! useRef can also be very useful to hold a mutable value across different renders of your component.
+
+                    For example, it’s often quite handy when using external libraries that weren’t made with React in mind.
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
