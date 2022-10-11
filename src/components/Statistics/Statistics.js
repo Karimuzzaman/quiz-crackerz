@@ -20,7 +20,7 @@ const Statistics = () => {
             }}
         >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="total" />
+            <XAxis dataKey="name" />
             <YAxis />
             <Tooltip />
             <Legend />
@@ -30,12 +30,7 @@ const Statistics = () => {
                 stroke="#8884d8"
                 activeDot={{ r: 8 }}
             />
-
         </LineChart>
-
-
-
-
     );
 };
 

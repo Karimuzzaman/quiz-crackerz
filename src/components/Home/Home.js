@@ -1,9 +1,17 @@
 import React from 'react';
 import './Home.css'
 import Img from '../../images/quiz.jpg'
+import { useLoaderData } from 'react-router-dom';
+import Topic from '../Topic/Topic'
+
 
 const Home = () => {
+    const data = useLoaderData();
+    const topics = data.data;
+
+
     return (
+
         <div className="card mb-3 home container mt-5">
             <div className="row g-0">
                 <div className="col-md-4">
@@ -17,7 +25,20 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div>
+
+                {
+                    topics.map(topic => <Topic
+                        key={topic.id}
+                        topic={topic}>
+
+                    </Topic>)
+                }
+
+            </div>
         </div>
+
+
     );
 };
 
