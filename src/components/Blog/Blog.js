@@ -25,7 +25,7 @@ function AllCollapseExample() {
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-                <Accordion.Header>Accordion Item #3</Accordion.Header>
+                <Accordion.Header>Describe the use of useRef hook in react?</Accordion.Header>
                 <Accordion.Body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
