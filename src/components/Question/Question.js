@@ -20,7 +20,7 @@ const Question = ({ quiz, idx }) => {
 
     const handleCorrectAnswer = (e) => {
         setCorrect(e);
-        toast(correctAnswer);
+        toast("Correct Answer is : " + correctAnswer);
 
     }
 
@@ -97,8 +97,8 @@ const Question = ({ quiz, idx }) => {
             </div>
 
             <div className="mb-3">
-                <button className='px-4 py-3' value={correctAnswer} onClick={(e) => handleCorrectAnswer(e.target.value)}>
-                    <FontAwesomeIcon icon={faEye} />
+                <button className='border border-0 bg-secondary rounded-circle' value={correctAnswer} onClick={(e) => handleCorrectAnswer(e.target.value)}>
+                    <FontAwesomeIcon className='fa-2x' icon={faEye} />
                 </button>
             </div>
         </div>
